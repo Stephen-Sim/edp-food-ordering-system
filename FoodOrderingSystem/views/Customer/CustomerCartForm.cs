@@ -76,9 +76,16 @@ namespace FoodOrderingSystem.views
             }
         }
 
+        delegate bool DelegateOneFoodOrder(FoodOrder ft);
+
+        DelegateOneFoodOrder ifNull = ft =>
+        {
+            return ft == null;
+        };
+
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            if (SelectedFoodorder == null)
+            if (ifNull(SelectedFoodorder))
             {
                 MessageBox.Show("Please Select an order", "Alert");
                 return;
