@@ -54,7 +54,7 @@ namespace FoodOrderingSystem
                     }
 
                     this.Hide();
-                    CustomerPanelForm form = new CustomerPanelForm(ifFound.Id);
+                    CustomerPanelForm form = new CustomerPanelForm(ifFound.Id, ifFound.Username.Trim());
                     form.Show();
                 }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FoodOrderingSystem.views.Customer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,17 +13,21 @@ namespace FoodOrderingSystem.views
 {
     public partial class CustomerPanelForm : Form
     {
-        public CustomerPanelForm(int cusId)
+        public CustomerPanelForm(int cusId, string username)
         {
             this.cusId = cusId;
+            this.username = username;
             InitializeComponent();
+
+            labelusername.Text = "Welcome !!! " + username;
         }
 
         int cusId { get; set; }
+        string username { get; set; }
 
         private void orderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OrderFoodForm form = new OrderFoodForm(this.cusId);
+            CustomerOrderFoodForm form = new CustomerOrderFoodForm(this.cusId);
             form.MdiParent = this;
             form.Dock = DockStyle.Fill;
             form.Show();
@@ -30,7 +35,10 @@ namespace FoodOrderingSystem.views
 
         private void cartToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            CustomerCartForm form = new CustomerCartForm(this.cusId);
+            form.MdiParent = this;
+            form.Dock = DockStyle.Fill;
+            form.Show();
         }
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -43,6 +51,14 @@ namespace FoodOrderingSystem.views
         private void CustomerPanelForm_Load(object sender, EventArgs e)
         {
             IsMdiContainer = true;
+        }
+
+        private void histroyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CustomerHistoryForm form = new CustomerHistoryForm(this.cusId);
+            form.MdiParent = this;
+            form.Dock = DockStyle.Fill;
+            form.Show();
         }
     }
 }

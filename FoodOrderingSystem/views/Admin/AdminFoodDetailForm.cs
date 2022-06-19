@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace FoodOrderingSystem
 {
-    public partial class FoodDetailForm : Form
+    public partial class AdminFoodDetailForm : Form
     {
         FoodController con = new FoodController();
 
         int SelectedFoodId { get; set; }
-        public FoodDetailForm()
+        public AdminFoodDetailForm()
         {
             InitializeComponent();
         }

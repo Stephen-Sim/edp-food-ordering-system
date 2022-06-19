@@ -1,6 +1,6 @@
 ﻿namespace FoodOrderingSystem
 {
-    partial class FoodDetailForm
+    partial class AdminFoodDetailForm
     {
         /// <summary>
         /// Required designer variable.

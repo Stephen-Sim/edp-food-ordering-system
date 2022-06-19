@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace FoodOrderingSystem.views
 {
-    public partial class OrderFoodForm : Form
+    public partial class CustomerOrderFoodForm : Form
     {
-        public OrderFoodForm(int cusId)
+        public CustomerOrderFoodForm(int cusId)
         {
             this.cusId = cusId;
             InitializeComponent();
@@ -25,6 +25,8 @@ namespace FoodOrderingSystem.views
         int cusId { get; set; }
         int SelectedFoodId { get; set; } = 0;
         int MaxQuantity { get; set; } = 0;
+
+        decimal? selectedFoodPrice { get; set; } = 0;
 
         private void loadTable(List<FoodTable> foods)
         {
@@ -39,6 +41,10 @@ namespace FoodOrderingSystem.views
             for (int i = 0; i < foods.Count(); i++)
             {
                 FoodTable food = foods[i];
+                
+                if (food.Stock == 0)
+                    continue;
+
                 table.Rows.Add(i + 1, food.Id, food.Name, food.Price, food.FoodTypeName, food.Stock);
             }
 
@@ -60,6 +66,7 @@ namespace FoodOrderingSystem.views
                 SelectedFoodId = (int)dataGridViewFood.Rows[e.RowIndex].Cells["Id"].Value;
                 Food food = foodController.getFood(SelectedFoodId);
                 MaxQuantity = (int) food.Stock;
+                selectedFoodPrice = food.Price;
                 labelFoodName.Text = food.Name;
             }
             catch (Exception)
@@ -105,9 +112,11 @@ namespace FoodOrderingSystem.views
 
                 if (orderController.AddOrder(this.cusId, SelectedFoodId, quantity))
                 {
-                    MessageBox.Show("Order is Successfully Added to Cart", "Alert");
+                    decimal? price = quantity * selectedFoodPrice;
+                    MessageBox.Show($"Order is Successfully Added to Cart!!\nTotal Price : RM {price}", "Alert");
                     var foods = foodController.getFoodTable();
                     this.loadTable(foods);
+                    buttonReset_Click(null, null);
                 }
                 else
                 {

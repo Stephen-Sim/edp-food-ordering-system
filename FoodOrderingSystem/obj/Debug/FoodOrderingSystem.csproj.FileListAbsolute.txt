@@ -10,12 +10,15 @@ C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderi
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.Properties.Resources.resources
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.AdminPanelForm.resources
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.views.CustomerPanelForm.resources
-C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.FoodDetailForm.resources
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.Login.resources
-C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.views.OrderFoodForm.resources
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.Register.resources
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.csproj.GenerateResource.cache
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.csproj.CoreCompileInputs.cache
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.csproj.CopyComplete
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.exe
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.pdb
+C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.views.CustomerCartForm.resources
+C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.AdminFoodDetailForm.resources
+C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.views.CustomerOrderFoodForm.resources
+C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.views.Admin.AdminReportForm.resources
+C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.views.Customer.CustomerHistoryForm.resources

@@ -8,7 +8,20 @@ namespace FoodOrderingSystem.models
 {
     public class CartTable : FoodOrder
     {
-        public string FoodName;
-        public string FoodType;
+        private string foodName;
+
+        public string FoodName
+        {
+            get { return foodName; }
+            set { foodName = value.Trim(); }
+        }
+
+        private string foodType;
+
+        public string FoodType
+        {
+            get { return foodType; }
+            set { foodType = value.Trim(); }
+        }
     }
 }

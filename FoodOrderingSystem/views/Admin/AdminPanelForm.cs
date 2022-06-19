@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FoodOrderingSystem.views.Admin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,7 +28,7 @@ namespace FoodOrderingSystem
 
         private void foodStatusToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FoodDetailForm form = new FoodDetailForm();
+            AdminFoodDetailForm form = new AdminFoodDetailForm();
             form.MdiParent = this;
             form.Dock = DockStyle.Fill;
             form.Show();
@@ -37,6 +38,14 @@ namespace FoodOrderingSystem
         {
             this.Hide();
             Login form = new Login();
+            form.Show();
+        }
+
+        private void reportToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AdminReportForm form = new AdminReportForm();
+            form.MdiParent = this;
+            form.Dock = DockStyle.Fill;
             form.Show();
         }
     }

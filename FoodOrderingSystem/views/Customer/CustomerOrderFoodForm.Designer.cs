@@ -1,6 +1,6 @@
 ﻿namespace FoodOrderingSystem.views
 {
-    partial class OrderFoodForm
+    partial class CustomerOrderFoodForm
     {
         /// <summary>
         /// Required designer variable.

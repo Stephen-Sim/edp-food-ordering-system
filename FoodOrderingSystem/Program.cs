@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FoodOrderingSystem.views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ namespace FoodOrderingSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // Application.Run(new Login());
             Application.Run(new Login());
         }
     }
