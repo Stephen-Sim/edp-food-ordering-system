@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="704b0c514afe40128b030e65786fa1fa" Name="Diagram1">
+        <EntityTypeShape EntityType="FoodOrderingSystemModel.FoodOrder" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoodOrderingSystemModel.Food" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoodOrderingSystemModel.FoodType" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoodOrderingSystemModel.Order" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoodOrderingSystemModel.Role" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoodOrderingSystemModel.User" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="FoodOrderingSystemModel.FK__FoodOrder__FoodI__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="FoodOrderingSystemModel.FK__FoodOrder__Order__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="FoodOrderingSystemModel.FK_Foods_FoodTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="FoodOrderingSystemModel.FK_Orders_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FoodOrderingSystemModel.FK_Users_Roles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
