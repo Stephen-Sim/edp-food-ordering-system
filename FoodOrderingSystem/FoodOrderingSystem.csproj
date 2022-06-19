@@ -87,6 +87,7 @@
     <Compile Include="models\Order.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="models\OrderMessage.cs" />
     <Compile Include="models\OrderTable.cs" />
     <Compile Include="models\Role.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -158,6 +159,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="views\Admin\AdminPanelForm.resx">
       <DependentUpon>AdminPanelForm.cs</DependentUpon>
@@ -221,6 +223,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

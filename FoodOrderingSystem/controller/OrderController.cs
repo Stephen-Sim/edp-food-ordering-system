@@ -219,6 +219,27 @@ namespace FoodOrderingSystem.controller
             }
         }
 
+        public List<OrderMessage> getSelectedOrder(int id)
+        {
+            var fo = ent.FoodOrders.Where(x => x.OrderId == id).ToList().Select(x => new
+            {
+                FoodName = ent.Foods.First(y => y.Id == x.FoodId).Name,
+                TotalPrice = x.TotalPrice,
+            });
+
+            List<OrderMessage> result = new List<OrderMessage>();
+
+            foreach (var order in fo)
+            {
+                OrderMessage ordermsg = new OrderMessage();
+                ordermsg.FoodName = order.FoodName;
+                ordermsg.TotalPrice = order.TotalPrice;
+                result.Add(ordermsg);
+            }
+
+            return result;
+        }
+
         public bool testConnection()
         {
             throw new NotImplementedException();

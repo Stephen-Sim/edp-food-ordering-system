@@ -59,21 +59,21 @@
             // foodStatusToolStripMenuItem
             // 
             this.foodStatusToolStripMenuItem.Name = "foodStatusToolStripMenuItem";
-            this.foodStatusToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.foodStatusToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.foodStatusToolStripMenuItem.Text = "Food Status";
             this.foodStatusToolStripMenuItem.Click += new System.EventHandler(this.foodStatusToolStripMenuItem_Click);
             // 
             // reportToolStripMenuItem1
             // 
             this.reportToolStripMenuItem1.Name = "reportToolStripMenuItem1";
-            this.reportToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.reportToolStripMenuItem1.Size = new System.Drawing.Size(136, 22);
             this.reportToolStripMenuItem1.Text = "Report";
             this.reportToolStripMenuItem1.Click += new System.EventHandler(this.reportToolStripMenuItem1_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
@@ -81,6 +81,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::FoodOrderingSystem.Properties.Resources._1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1002, 517);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;

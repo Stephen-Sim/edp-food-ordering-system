@@ -44,6 +44,7 @@
             this.dataGridViewOrder.Name = "dataGridViewOrder";
             this.dataGridViewOrder.Size = new System.Drawing.Size(712, 336);
             this.dataGridViewOrder.TabIndex = 0;
+            this.dataGridViewOrder.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewOrder_CellClick);
             // 
             // label1
             // 

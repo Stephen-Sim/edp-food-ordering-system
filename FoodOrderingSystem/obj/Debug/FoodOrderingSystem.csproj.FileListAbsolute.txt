@@ -10,7 +10,6 @@ C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderi
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.Properties.Resources.resources
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.AdminPanelForm.resources
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.views.CustomerPanelForm.resources
-C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.Login.resources
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.Register.resources
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.csproj.GenerateResource.cache
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.csproj.CoreCompileInputs.cache
@@ -22,3 +21,4 @@ C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderi
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.views.CustomerOrderFoodForm.resources
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.views.Admin.AdminReportForm.resources
 C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.views.Customer.CustomerHistoryForm.resources
+C:\Users\USER\Desktop\FoodOrderingSystem\FoodOrderingSystem\obj\Debug\FoodOrderingSystem.Login.resources

@@ -62,5 +62,31 @@ namespace FoodOrderingSystem.views.Customer
             var ot = orderController.getOrderTableDateRange(startdate, enddate);
             loadTable(ot);
         }
+
+        int SelectedOrderId { get; set; }
+
+        private void dataGridViewOrder_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                SelectedOrderId = (int)dataGridViewOrder.Rows[e.RowIndex].Cells["Id"].Value;
+
+                List<OrderMessage> ordermsgs = orderController.getSelectedOrder(SelectedOrderId);
+                string msg = string.Empty;
+                if (ordermsgs != null)
+                {
+                    for (int i = 0; i < ordermsgs.Count; i++)
+                    {
+                        msg += $"{i + 1}. {ordermsgs[i].FoodName}\n   Total Price : {ordermsgs[i].TotalPrice}\n\n";
+                    }
+
+                    MessageBox.Show(msg, "Alert");
+                }
+            }
+            catch (Exception)
+            {
+                return;
+            }
+        }
     }
 }
