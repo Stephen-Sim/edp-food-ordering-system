@@ -84,19 +84,31 @@ namespace FoodOrderingSystem.views
             labelFoodName.Text = "No Food Selected";
         }
 
+        delegate bool DelegateOneInt (int expression);
+
+        DelegateOneInt checkIfEqualZero = delegate (int expression)
+        {
+            return expression == 0;
+        };
+
+        DelegateOneInt checkIfSamllerOrEqualToZero = quantity =>
+        {
+            return quantity <= 0;
+        };
+
         private void buttonAddCart_Click(object sender, EventArgs e)
         {
             try
             {
                 int quantity = int.Parse(textBoxQuantity.Text);
 
-                if (SelectedFoodId == 0)
+                if (checkIfEqualZero(SelectedFoodId))
                 {
                     MessageBox.Show("You must select a food!", "Alert");
                     return;
                 }
 
-                if (quantity <= 0)
+                if (checkIfSamllerOrEqualToZero(quantity))
                 {
                     MessageBox.Show("Invalid quantity value!! Input must be greater than 0.", "Alert");
                     textBoxQuantity.Text = 0.ToString();

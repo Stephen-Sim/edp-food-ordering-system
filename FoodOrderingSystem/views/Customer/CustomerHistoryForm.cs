@@ -65,6 +65,18 @@ namespace FoodOrderingSystem.views.Customer
 
         int SelectedOrderId { get; set; }
 
+        delegate string DelegateOneString(string msg);
+
+        DelegateOneString concatString = delegate (string msg)
+        {
+            if (msg != string.Empty)
+            {
+                return msg;
+            }
+
+            return "No Data";
+        };
+
         private void dataGridViewOrder_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -77,7 +89,7 @@ namespace FoodOrderingSystem.views.Customer
                 {
                     for (int i = 0; i < ordermsgs.Count; i++)
                     {
-                        msg += $"{i + 1}. {ordermsgs[i].FoodName}\n   Total Price : {ordermsgs[i].TotalPrice}\n\n";
+                        msg += concatString($"{i + 1}. {ordermsgs[i].FoodName}\n   Total Price : {ordermsgs[i].TotalPrice}\n\n");
                     }
 
                     MessageBox.Show(msg, "Alert");
