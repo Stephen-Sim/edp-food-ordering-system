@@ -39,14 +39,14 @@
             // 
             // dateTimePickerEndDate
             // 
-            this.dateTimePickerEndDate.Location = new System.Drawing.Point(449, 35);
+            this.dateTimePickerEndDate.Location = new System.Drawing.Point(449, 41);
             this.dateTimePickerEndDate.Name = "dateTimePickerEndDate";
             this.dateTimePickerEndDate.Size = new System.Drawing.Size(200, 20);
             this.dateTimePickerEndDate.TabIndex = 11;
             // 
             // buttonSearch
             // 
-            this.buttonSearch.Location = new System.Drawing.Point(674, 31);
+            this.buttonSearch.Location = new System.Drawing.Point(674, 37);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(84, 30);
             this.buttonSearch.TabIndex = 10;
@@ -56,7 +56,7 @@
             // 
             // dateTimePickerStartDate
             // 
-            this.dateTimePickerStartDate.Location = new System.Drawing.Point(141, 35);
+            this.dateTimePickerStartDate.Location = new System.Drawing.Point(141, 41);
             this.dateTimePickerStartDate.Name = "dateTimePickerStartDate";
             this.dateTimePickerStartDate.Size = new System.Drawing.Size(200, 20);
             this.dateTimePickerStartDate.TabIndex = 9;
@@ -65,7 +65,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(369, 35);
+            this.label2.Location = new System.Drawing.Point(369, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 20);
             this.label2.TabIndex = 8;
@@ -75,7 +75,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 35);
+            this.label1.Location = new System.Drawing.Point(42, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 20);
             this.label1.TabIndex = 7;
@@ -86,7 +86,7 @@
             this.dataGridViewOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewOrder.Location = new System.Drawing.Point(46, 83);
             this.dataGridViewOrder.Name = "dataGridViewOrder";
-            this.dataGridViewOrder.Size = new System.Drawing.Size(712, 336);
+            this.dataGridViewOrder.Size = new System.Drawing.Size(712, 326);
             this.dataGridViewOrder.TabIndex = 6;
             this.dataGridViewOrder.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewOrder_CellClick);
             // 

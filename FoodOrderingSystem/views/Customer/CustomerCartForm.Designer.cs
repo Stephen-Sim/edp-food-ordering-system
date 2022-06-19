@@ -39,9 +39,9 @@
             // dataGridViewCart
             // 
             this.dataGridViewCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCart.Location = new System.Drawing.Point(69, 46);
+            this.dataGridViewCart.Location = new System.Drawing.Point(69, 54);
             this.dataGridViewCart.Name = "dataGridViewCart";
-            this.dataGridViewCart.Size = new System.Drawing.Size(659, 316);
+            this.dataGridViewCart.Size = new System.Drawing.Size(659, 305);
             this.dataGridViewCart.TabIndex = 0;
             this.dataGridViewCart.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCart_CellClick);
             // 
@@ -49,7 +49,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(64, 379);
+            this.label1.Location = new System.Drawing.Point(64, 377);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(181, 29);
             this.label1.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             this.labelTotalAmount.AutoSize = true;
             this.labelTotalAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalAmount.Location = new System.Drawing.Point(251, 379);
+            this.labelTotalAmount.Location = new System.Drawing.Point(251, 377);
             this.labelTotalAmount.Name = "labelTotalAmount";
             this.labelTotalAmount.Size = new System.Drawing.Size(62, 29);
             this.labelTotalAmount.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(489, 376);
+            this.buttonDelete.Location = new System.Drawing.Point(489, 374);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(111, 42);
             this.buttonDelete.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             // buttonConfirmOrder
             // 
-            this.buttonConfirmOrder.Location = new System.Drawing.Point(617, 376);
+            this.buttonConfirmOrder.Location = new System.Drawing.Point(617, 374);
             this.buttonConfirmOrder.Name = "buttonConfirmOrder";
             this.buttonConfirmOrder.Size = new System.Drawing.Size(111, 42);
             this.buttonConfirmOrder.TabIndex = 5;
