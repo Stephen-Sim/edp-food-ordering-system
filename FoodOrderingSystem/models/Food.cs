@@ -21,14 +21,7 @@ namespace FoodOrderingSystem.models
         }
     
         public int Id { get; set; }
-
-        private string name;
-
-        public string Name
-        {
-            get { return name; }
-            set { name = value.Trim(); }
-        }
+        public string Name { get; set; }
         public Nullable<decimal> Price { get; set; }
         public Nullable<int> FoodTypeId { get; set; }
         public Nullable<int> Stock { get; set; }

@@ -41,6 +41,10 @@ namespace FoodOrderingSystem
 
                 MessageBox.Show("User Successfully Created", "OK");
 
+                this.Close();
+                var form = new Login();
+                form.Show();
+
             }
             catch
             {
